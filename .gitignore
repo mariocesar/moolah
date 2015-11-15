@@ -1,5 +1,8 @@
 *.pyc
 *.sqlite3
-bower
+
+static/vendors
 node_modules
-prod_static
+
+public/static
+public/media

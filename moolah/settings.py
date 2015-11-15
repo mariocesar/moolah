@@ -75,11 +75,15 @@ REST_FRAMEWORK = {
 }
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'prod_static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'public', 'media')
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'bower'),
     os.path.join(BASE_DIR, 'static')
 ]
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
